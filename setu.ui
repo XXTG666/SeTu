@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>setu</class>
+ <widget class="QMainWindow" name="setu">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>二次元图片</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="img">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>图片操作</string>
+    </property>
+    <addaction name="view"/>
+    <addaction name="copy"/>
+    <addaction name="separator"/>
+    <addaction name="web"/>
+    <addaction name="web2"/>
+    <addaction name="sear"/>
+    <addaction name="separator"/>
+    <addaction name="copya"/>
+    <addaction name="separator"/>
+    <addaction name="idel"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>获取图片</string>
+    </property>
+    <addaction name="a1"/>
+    <addaction name="a2"/>
+    <addaction name="a3"/>
+    <addaction name="a4"/>
+    <addaction name="a5"/>
+    <addaction name="a6"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>图片设置</string>
+    </property>
+    <addaction name="rsize"/>
+    <addaction name="rdir"/>
+    <addaction name="clears"/>
+    <addaction name="separator"/>
+    <addaction name="rset"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>图片收藏</string>
+    </property>
+    <addaction name="fava"/>
+    <addaction name="favo"/>
+    <addaction name="separator"/>
+    <addaction name="favr"/>
+    <addaction name="separator"/>
+    <addaction name="favd"/>
+    <addaction name="favc"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="about_this"/>
+    <addaction name="uplog"/>
+    <addaction name="separator"/>
+    <addaction name="checku"/>
+    <addaction name="opens"/>
+   </widget>
+   <addaction name="menu_2"/>
+   <addaction name="menu"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_5"/>
+  </widget>
+  <action name="about">
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+  <action name="mess">
+   <property name="text">
+    <string>图片信息</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>复制图片链接</string>
+   </property>
+  </action>
+  <action name="save">
+   <property name="text">
+    <string>保存图片</string>
+   </property>
+  </action>
+  <action name="view">
+   <property name="text">
+    <string>查看图片信息</string>
+   </property>
+  </action>
+  <action name="copy">
+   <property name="text">
+    <string>复制图片链接</string>
+   </property>
+  </action>
+  <action name="web">
+   <property name="text">
+    <string>使用本地查看器打开图片</string>
+   </property>
+  </action>
+  <action name="web2">
+   <property name="text">
+    <string>打开图片的网页链接</string>
+   </property>
+  </action>
+  <action name="a1">
+   <property name="text">
+    <string>http://www.dmoe.cc/random.php</string>
+   </property>
+  </action>
+  <action name="a2">
+   <property name="text">
+    <string>https://api.dongmanxingkong.com/suijitupian/acg/1080p/index.php</string>
+   </property>
+  </action>
+  <action name="a3">
+   <property name="text">
+    <string>https://api.ixiaowai.cn/api/api.php</string>
+   </property>
+  </action>
+  <action name="a4">
+   <property name="text">
+    <string>https://api.mtyqx.cn/api/random.php</string>
+   </property>
+  </action>
+  <action name="a5">
+   <property name="text">
+    <string>https://api.mtyqx.cn/tapi/random.php</string>
+   </property>
+  </action>
+  <action name="copya">
+   <property name="text">
+    <string>复制API接口</string>
+   </property>
+  </action>
+  <action name="rsize">
+   <property name="text">
+    <string>调整图片显示大小</string>
+   </property>
+  </action>
+  <action name="rdir">
+   <property name="text">
+    <string>修改保存文件夹</string>
+   </property>
+  </action>
+  <action name="rset">
+   <property name="text">
+    <string>恢复默认设置</string>
+   </property>
+  </action>
+  <action name="fava">
+   <property name="text">
+    <string>将当前图片添加到收藏</string>
+   </property>
+  </action>
+  <action name="favo">
+   <property name="text">
+    <string>打开收藏中的图片</string>
+   </property>
+  </action>
+  <action name="favc">
+   <property name="text">
+    <string>清空收藏</string>
+   </property>
+  </action>
+  <action name="favd">
+   <property name="text">
+    <string>删除收藏中的一项</string>
+   </property>
+  </action>
+  <action name="a6">
+   <property name="text">
+    <string>https://cloud.qqshabi.cn/api/acg/api.php</string>
+   </property>
+  </action>
+  <action name="sear">
+   <property name="text">
+    <string>在SauceNAO中搜索图片</string>
+   </property>
+  </action>
+  <action name="uplog">
+   <property name="text">
+    <string>更新日志</string>
+   </property>
+  </action>
+  <action name="about_this">
+   <property name="text">
+    <string>关于此程序</string>
+   </property>
+  </action>
+  <action name="clears">
+   <property name="text">
+    <string>清除图片缓存</string>
+   </property>
+  </action>
+  <action name="idel">
+   <property name="text">
+    <string>删除这张图片</string>
+   </property>
+  </action>
+  <action name="favr">
+   <property name="text">
+    <string>重命名收藏</string>
+   </property>
+  </action>
+  <action name="checku">
+   <property name="text">
+    <string>检查更新</string>
+   </property>
+  </action>
+  <action name="opens">
+   <property name="text">
+    <string>开源状态</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
